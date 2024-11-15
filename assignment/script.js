@@ -9,6 +9,15 @@ const calculateSumAndAverage = (numbers) => {
 
 console.log(calculateSumAndAverage(numbers));
 
+// Task 3
+const removeDuplicates = (arr) => {
+    return [...new Set(arr)]; //  Set ==> ensure uniqueness
+  };
+  
+  const strings = ["apple", "banana", "orange", "apple", "banana"];
+  console.log(removeDuplicates(strings));
+
+  
 // To run this script:
 // 1. Include it in an HTML file and open it in a browser.
 // 2. Or run it in the terminal using Node.js: `node script.js`
