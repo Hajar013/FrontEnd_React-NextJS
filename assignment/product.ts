@@ -17,6 +17,16 @@ interface Product {
   ];
   
   console.log(calculateTotalPrice(products)); 
+
+// Task 5
+const isValidEmail = (email: string): boolean => {
+    const emailPattern = new RegExp('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$');
+    return emailPattern.test(email);
+  };
+  
+  console.log(isValidEmail("test@example.com")); 
+  console.log(isValidEmail("invalid-email")); 
+  
   
   // Instructions: 
   // Compile this file using TypeScript (`tsc product.ts`) 
